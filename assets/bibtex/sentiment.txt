@@ -1,0 +1,55 @@
+@inproceedings{xu2025towards,
+  title={Towards Multimodal Sentiment Analysis via Hierarchical Correlation Modeling with Semantic Distribution Constraints},
+  author={Xu, Qinfu and Wei, Yiwei and Wu, Chunlei and Wang, Leiquan and Yuan, Shaozu and Wu, Jie and Lu, Jing and Zhou, Hengyang},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={20},
+  pages={21788--21796},
+  year={2025}
+}
+
+
+@inproceedings{wei2024g,
+  title={G\^{} 2SAM: Graph-Based Global Semantic Awareness Method for Multimodal Sarcasm Detection},
+  author={Wei, Yiwei and Yuan, Shaozu and Zhou, Hengyang and Wang, Longbiao and Yan, Zhiling and Yang, Ruosong and Chen, Meng},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={8},
+  pages={9151--9159},
+  year={2024}
+}
+
+@article{wei2024towards,
+  title={Towards multimodal sarcasm detection via label-aware graph contrastive learning with back-translation augmentation},
+  author={Wei, Yiwei and Duan, Maomao and Zhou, Hengyang and Jia, Zhiyang and Gao, Zengwei and Wang, Longbiao},
+  journal={Knowledge-Based Systems},
+  volume={300},
+  pages={112109},
+  year={2024},
+  publisher={Elsevier}
+}
+
+@article{yuan2025enhancing,
+  title={Enhancing Semantic Awareness by Sentimental Constraint with Automatic Outlier Masking for Multimodal Sarcasm Detection},
+  author={Yuan, Shaozu and Wei, Yiwei and Zhou, Hengyang and Xu, Qinfu and Chen, Meng and He, Xiaodong},
+  journal={IEEE Transactions on Multimedia},
+  year={2025},
+  publisher={IEEE}
+}
+
+@inproceedings{zhou2025ldgnet,
+  title={LDGNet: LLMs Debate-Guided Network for Multimodal Sarcasm Detection},
+  author={Zhou, Hengyang and Yan, Jinwu and Chen, Yaqing and Hong, Rongman and Zuo, Wenbo and Jin, Keyan},
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
+}
+
+@article{wei2025deepmsd,
+  title={DeepMSD: Advancing Multimodal Sarcasm Detection through Knowledge-augmented Graph Reasoning},
+  author={Wei, Yiwei and Zhou, Hengyang and Yuan, Shaozu and Chen, Meng and Shi, Haitao and Jia, Zhiyang and Wang, Longbiao and He, Xiaodong},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2025},
+  publisher={IEEE}
+}
