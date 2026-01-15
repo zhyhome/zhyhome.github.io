@@ -1,0 +1,8 @@
+@inproceedings{wang2025davinci,
+  title={DaVinci Sketch: A Versatile Sketch for Efficient and Comprehensive Set Measurements},
+  author={Wang, Yanshu and Ji, Jianan and Liu, Chao-Hsuan and Zhou, Hengyang and Yang, Tong},
+  booktitle={2025 IEEE 41st International Conference on Data Engineering (ICDE)},
+  pages={210--223},
+  year={2025},
+  organization={IEEE Computer Society}
+}
