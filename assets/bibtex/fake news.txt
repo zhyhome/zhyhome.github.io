@@ -8,4 +8,12 @@
       url={https://arxiv.org/abs/2510.05839}, 
 }
 
-
+@misc{zhou2026diverdynamiciterativevisual,
+      title={DIVER: Dynamic Iterative Visual Evidence Reasoning for Multimodal Fake News Detection}, 
+      author={Weilin Zhou and Zonghao Ying and Chunlei Meng and Jiahui Liu and Hengyang Zhou and Quanchen Zou and Deyue Zhang and Dongdong Yang and Xiangzheng Zhang},
+      year={2026},
+      eprint={2601.07178},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2601.07178}, 
+}
