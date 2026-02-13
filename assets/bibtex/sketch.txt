@@ -6,3 +6,16 @@
   year={2025},
   organization={IEEE Computer Society}
 }
+
+@ARTICLE{11393510,
+  author={Yang, Kaicheng and Zhou, Tianbao and Zhou, Hengyang and Zhao, Yikai and Li, Yuanpeng and Wu, Yuhan and Meng, Zili and Ren, Fengyuan and Yang, Tong},
+  journal={IEEE Transactions on Networking}, 
+  title={Compass: Congestion Control for Disobedient Traffic}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Compass;Switches;Delays;Steady-state;Oscillators;Feedback loop;Data centers;Bandwidth;Throughput;Computer science;Congestion control;Network measurement;Sketch},
+  doi={10.1109/TON.2026.3663789}}
+
+
