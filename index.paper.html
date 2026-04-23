@@ -14,6 +14,9 @@
     body {
       padding-top: 20px;
       padding-bottom: 60px;
+      font-family: "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      color: #1f2937;
+      background: #f8fafc;
     }
 
     .foot-fixed-bottom {
@@ -48,7 +51,11 @@
     }
 
     .container>hr {
-      margin: 60px 0;
+      display: none;
+    }
+
+    hr {
+      display: none;
     }
 
     /* Main marketing message and sign up button */
@@ -85,6 +92,9 @@
     /* Customize the navbar links to be fill the entire space of the .navbar */
     .navbar .navbar-inner {
       padding: 0;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background: #ffffff;
     }
 
     .navbar .nav {
@@ -100,20 +110,72 @@
     }
 
     .navbar .nav li a {
-      font-weight: bold;
+      font-weight: 600;
       text-align: center;
-      border-left: 1px solid rgba(255, 255, 255, .75);
-      border-right: 1px solid rgba(0, 0, 0, .1);
+      border-left: 1px solid #eef2f7;
+      border-right: 1px solid #f7f8fa;
+      color: #334155;
+      padding: 10px 8px;
+      text-decoration: none;
     }
 
     .navbar .nav li:first-child a {
       border-left: 0;
-      border-radius: 3px 0 0 3px;
+      border-radius: 10px 0 0 10px;
     }
 
     .navbar .nav li:last-child a {
       border-right: 0;
-      border-radius: 0 3px 3px 0;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .navbar .nav li a:hover {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    .media-object {
+      border-radius: 10px;
+    }
+
+    .media,
+    .row {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+    }
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .row .span {
+      margin-left: 0;
+    }
+
+    .media,
+    .row {
+      margin-bottom: 12px;
+    }
+
+    ol,
+    ul,
+    p,
+    li {
+      line-height: 1.65;
+    }
+
+    a {
+      color: #0f766e;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #0e5f58;
+      text-decoration: underline;
     }
 
     .nav-toggle {
@@ -147,10 +209,10 @@
         display: inline-block;
         margin: 8px 0;
         padding: 6px 12px;
-        border: 1px solid #bbb;
-        border-radius: 4px;
-        background: #f7f7f7;
-        color: #333;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        background: #ffffff;
+        color: #334155;
         font-weight: bold;
       }
 
@@ -189,7 +251,14 @@
       }
 
       .container>hr {
-        margin: 24px 0;
+        display: none;
+      }
+
+      .media,
+      .row {
+        padding: 14px;
+        border-radius: 10px;
+        margin-bottom: 10px;
       }
     }
   </style>
