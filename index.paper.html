@@ -115,6 +115,64 @@
       border-right: 0;
       border-radius: 0 3px 3px 0;
     }
+
+    /* Mobile first tweaks */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding-top: 0;
+        padding-bottom: 24px;
+      }
+
+      .container {
+        width: auto;
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .navbar.navbar-fixed-top {
+        position: static;
+      }
+
+      .navbar .nav {
+        display: block;
+        width: 100%;
+      }
+
+      .navbar .nav li {
+        display: block;
+        width: auto;
+        float: none;
+      }
+
+      .navbar .nav li a {
+        text-align: left;
+        border-left: 0;
+        border-right: 0;
+        padding: 10px 12px;
+      }
+
+      .media .pull-right {
+        float: none;
+        display: block;
+        margin: 0 0 12px 0;
+      }
+
+      .media-object {
+        display: block;
+        margin: 0 auto;
+        max-width: 180px;
+      }
+
+      .container>hr {
+        margin: 24px 0;
+      }
+    }
   </style>
   <meta name="msvalidate.01" content="C3BAD408471FC3FED47F7615DA8986EE" />
 </head>
