@@ -116,6 +116,10 @@
       border-radius: 0 3px 3px 0;
     }
 
+    .nav-toggle {
+      display: none;
+    }
+
     /* Mobile first tweaks */
     img {
       max-width: 100%;
@@ -139,9 +143,24 @@
         position: static;
       }
 
+      .nav-toggle {
+        display: inline-block;
+        margin: 8px 0;
+        padding: 6px 12px;
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        background: #f7f7f7;
+        color: #333;
+        font-weight: bold;
+      }
+
       .navbar .nav {
-        display: block;
+        display: none;
         width: 100%;
+      }
+
+      .navbar .nav.is-open {
+        display: block;
       }
 
       .navbar .nav li {
@@ -185,7 +204,8 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <ul class="nav">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-paper">Menu</button>
+          <ul class="nav" id="site-nav-paper">
             <li><a href="index.html" target="_self">Home</a></li>
             <li><a href="index.html#News" target="_self">News</a></li>
             <li><a href="index.html#Education" target="_self">Education</a></li>
@@ -264,6 +284,28 @@
         <script src="assets/bootstrap-collapse.js.download"></script>
         <script src="assets/bootstrap-carousel.js.download"></script>
         <script src="assets/bootstrap-typeahead.js.download"></script>
+        <script>
+          (function () {
+            var button = document.querySelector('.nav-toggle');
+            var nav = document.getElementById('site-nav-paper');
+            if (!button || !nav) return;
+
+            button.addEventListener('click', function () {
+              var isOpen = nav.classList.toggle('is-open');
+              button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            var links = nav.querySelectorAll('a[target="_self"]');
+            for (var i = 0; i < links.length; i++) {
+              links[i].addEventListener('click', function () {
+                if (window.innerWidth <= 768) {
+                  nav.classList.remove('is-open');
+                  button.setAttribute('aria-expanded', 'false');
+                }
+              });
+            }
+          })();
+        </script>
 
 </body>
 
