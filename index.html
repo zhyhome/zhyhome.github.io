@@ -528,8 +528,10 @@
 					return response.json();
 				})
 				.then(function (data) {
-					if (typeof data.total_citations === 'number') {
+					if (typeof data.total_citations === 'number' && data.total_citations > 0) {
 						el.textContent = '(Citations: ' + data.total_citations + ')';
+					} else {
+						el.textContent = '(Citations: --)';
 					}
 				})
 				.catch(function () {
