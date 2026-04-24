@@ -491,6 +491,10 @@
 
 			<hr>
 
+			<div style="text-align:right; color:#92a08d; font-size:12px; margin-top:10px;">
+				Last updated: <span id="last-updated">--</span>
+			</div>
+
 		</div>
 	</div>
 
@@ -537,6 +541,23 @@
 				.catch(function () {
 					el.textContent = '(Citations: --)';
 				});
+		})();
+	</script>
+	<script>
+		(function () {
+			var el = document.getElementById('last-updated');
+			if (!el) return;
+
+			var lastModified = document.lastModified ? new Date(document.lastModified) : null;
+			if (!lastModified || isNaN(lastModified.getTime())) {
+				el.textContent = '--';
+				return;
+			}
+
+			var year = lastModified.getFullYear();
+			var month = String(lastModified.getMonth() + 1).padStart(2, '0');
+			var day = String(lastModified.getDate()).padStart(2, '0');
+			el.textContent = year + '-' + month + '-' + day;
 		})();
 	</script>
 	<script>
