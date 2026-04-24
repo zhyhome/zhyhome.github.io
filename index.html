@@ -305,7 +305,8 @@
 					<br>
 					Email: hengyangzhou(at)smail.nju.edu.cn; hyzhou03@gmail.com
 					<br>
-					<a href="https://scholar.google.com.hk/citations?user=ZIxQLz8AAAAJ&hl=zh-CN">Google Scholar</a> |
+					<a href="https://scholar.google.com.hk/citations?user=ZIxQLz8AAAAJ&hl=zh-CN">Google Scholar</a>
+					<span id="scholar-citations" style="color:#667566;">(Citations: --)</span> |
 					<a href="https://dblp.org/pid/371/4559">DBLP</a> |
 					<a href="https://github.com/zhyhome">Github</a>
 
@@ -514,6 +515,28 @@
 	<script src="assets/bootstrap-collapse.js.download"></script>
 	<script src="assets/bootstrap-carousel.js.download"></script>
 	<script src="assets/bootstrap-typeahead.js.download"></script>
+	<script>
+		(function () {
+			var el = document.getElementById('scholar-citations');
+			if (!el) return;
+
+			fetch('assets/scholar-stats.json')
+				.then(function (response) {
+					if (!response.ok) {
+						throw new Error('Failed to load scholar stats.');
+					}
+					return response.json();
+				})
+				.then(function (data) {
+					if (typeof data.total_citations === 'number') {
+						el.textContent = '(Citations: ' + data.total_citations + ')';
+					}
+				})
+				.catch(function () {
+					el.textContent = '(Citations: --)';
+				});
+		})();
+	</script>
 	<script>
 		(function () {
 			var button = document.querySelector('.nav-toggle');
