@@ -79,7 +79,8 @@
 		/* Custom container */
 		.container {
 			margin: 0 auto;
-			max-width: 1000px;
+			width: min(100% - 32px, 980px);
+			max-width: 980px;
 		}
 
 		.container>hr {
@@ -131,13 +132,14 @@
 
 		.navbar .nav {
 			margin: 0;
-			display: table;
+			display: flex;
 			width: 100%;
+			flex-wrap: nowrap;
 		}
 
 		.navbar .nav li {
-			display: table-cell;
-			width: 1%;
+			display: block;
+			flex: 1 1 0;
 			float: none;
 		}
 
@@ -169,6 +171,8 @@
 
 		.media-object {
 			border-radius: 10px;
+			width: 150px;
+			height: auto;
 		}
 
 		.media,
@@ -194,6 +198,35 @@
 			margin-bottom: 12px;
 		}
 
+		.about-section {
+			display: flex;
+			align-items: stretch;
+			gap: 28px;
+		}
+
+		.about-text {
+			flex: 1 1 auto;
+			min-width: 0;
+			max-width: 680px;
+			line-height: 1.8;
+		}
+
+		.about-text h4 {
+			margin-bottom: 16px;
+		}
+
+		.about-text br {
+			line-height: 2;
+		}
+
+		.about-photo {
+			width: 150px;
+			flex: 0 0 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
 		ol,
 		ul,
 		p,
@@ -215,10 +248,44 @@
 			display: none;
 		}
 
-		/* Mobile first tweaks */
+		/* Responsive layout */
 		img {
 			max-width: 100%;
 			height: auto;
+		}
+
+		@media (min-width: 1200px) {
+			.container {
+				width: min(100% - 48px, 1040px);
+				max-width: 1040px;
+			}
+
+			.about-text {
+				max-width: 720px;
+			}
+
+			.media-object,
+			.about-photo {
+				width: 170px;
+				flex-basis: 170px;
+			}
+		}
+
+		@media (min-width: 769px) and (max-width: 1199px) {
+			.container {
+				width: min(100% - 36px, 940px);
+				max-width: 940px;
+			}
+
+			.about-text {
+				max-width: 620px;
+			}
+
+			.media-object,
+			.about-photo {
+				width: 150px;
+				flex-basis: 150px;
+			}
 		}
 
 		@media (max-width: 768px) {
@@ -228,10 +295,10 @@
 			}
 
 			.container {
-				width: auto;
-				max-width: 100%;
-				padding-left: 14px;
-				padding-right: 14px;
+				width: calc(100% - 24px);
+				max-width: none;
+				padding-left: 0;
+				padding-right: 0;
 			}
 
 			.navbar.navbar-fixed-top {
@@ -271,16 +338,26 @@
 				padding: 10px 12px;
 			}
 
-			.media .pull-right {
-				float: none;
-				display: block;
-				margin: 0 0 12px 0;
+			.about-section {
+				flex-direction: column-reverse;
+				gap: 14px;
 			}
 
 			.media-object {
 				display: block;
 				margin: 0 auto;
-				max-width: 180px;
+				width: 120px;
+			}
+
+			.about-photo {
+				width: 120px;
+				flex-basis: 120px;
+				margin: 0 auto;
+				align-self: center;
+			}
+
+			.about-text {
+				max-width: none;
 			}
 
 			.container>hr {
@@ -323,16 +400,13 @@
 		<br><br>
 		<div class="bs-docs-grid">
 
-			<div class="media">
-				<a class="pull-right">
-					<img src="photo/headshot1.jpg" alt="Portrait of Hengyang Zhou" class="media-object" style="margin-top:20px;">
-				</a>
-				<div class="media-body">
+			<div class="media about-section">
+				<div class="media-body about-text">
 					<h4>About Me</h4>
 					My name is Hengyang Zhou (周恒阳), I’m currently a first year Master student at <a
 						href="https://www.nju.edu.cn/">Nanjing University</a>, supervised by Prof. <a
 						href="https://jessezhang92.github.io/">Zhenyu Zhang (张振宇)</a>.
-					<br>Research Interests: Vision and Language Model.
+					<br>Research Interests: Multimodal Learning, Vision-Language Models.
 					<br>Email: hengyangzhou(at)smail.nju.edu.cn; hyzhou03@gmail.com
 					<br>
 					<a href="https://scholar.google.com.hk/citations?user=ZIxQLz8AAAAJ&hl=zh-CN">Google Scholar</a>
@@ -343,6 +417,9 @@
 					<br>If you are interested in collaborating with me, don't hesitate to drop me an email.
 
 					<!-- <font color="red"> I am looking for motivated PhD students and interns. </font>  -->
+				</div>
+				<div class="about-photo">
+					<img src="photo/headshot1.jpg" alt="Portrait of Hengyang Zhou" class="media-object">
 				</div>
 			</div>
 
@@ -542,19 +619,6 @@
 	<!-- Le javascript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="assets/jquery.js.download"></script>
-	<script src="assets/bootstrap-transition.js.download"></script>
-	<script src="assets/bootstrap-alert.js.download"></script>
-	<script src="assets/bootstrap-modal.js.download"></script>
-	<script src="assets/bootstrap-dropdown.js.download"></script>
-	<script src="assets/bootstrap-scrollspy.js.download"></script>
-	<script src="assets/bootstrap-tab.js.download"></script>
-	<script src="assets/bootstrap-tooltip.js.download"></script>
-	<script src="assets/bootstrap-popover.js.download"></script>
-	<script src="assets/bootstrap-button.js.download"></script>
-	<script src="assets/bootstrap-collapse.js.download"></script>
-	<script src="assets/bootstrap-carousel.js.download"></script>
-	<script src="assets/bootstrap-typeahead.js.download"></script>
 	<script>
 		(function () {
 			var el = document.getElementById('scholar-citations');
