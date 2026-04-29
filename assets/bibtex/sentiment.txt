@@ -53,3 +53,13 @@
   year={2025},
   publisher={IEEE}
 }
+
+@misc{pan2026isolatedutterancescueguidedinteraction,
+      title={Beyond Isolated Utterances: Cue-Guided Interaction for Context-Dependent Conversational Multimodal Understanding}, 
+      author={Zhaoyan Pan and Hengyang Zhou and Xiangdong Li and Yuning Wang and Ye Lou and Jiatong Pan and Ji Zhou and Wei Zhang},
+      year={2026},
+      eprint={2604.25618},
+      archivePrefix={arXiv},
+      primaryClass={cs.MM},
+      url={https://arxiv.org/abs/2604.25618}, 
+}
