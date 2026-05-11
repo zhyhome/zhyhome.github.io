@@ -1,11 +1,8 @@
-@misc{zhou2025robustrealiblemultimodalmisinformation,
-      title={Towards Robust and Realible Multimodal Misinformation Recognition with Incomplete Modality}, 
-      author={Hengyang Zhou and Yiwei Wei and Jian Yang and Zhenyu Zhang},
-      year={2025},
-      eprint={2510.05839},
-      archivePrefix={arXiv},
-      primaryClass={cs.MM},
-      url={https://arxiv.org/abs/2510.05839}, 
+@article{zhou2025towards,
+  title={Towards Robust and Relible Multimodal Misinformation Recognition with Incomplete Modality},
+  author={Zhou, Hengyang and Wei, Yiwei and Yang, Jian and Zhang, Zhenyu},
+  journal={arXiv preprint arXiv:2510.05839},
+  year={2025}
 }
 
 @misc{zhou2026diverdynamiciterativevisual,
